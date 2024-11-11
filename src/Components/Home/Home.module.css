@@ -1,0 +1,89 @@
+/* General reset for padding and margin */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Full viewport background styling */
+  .body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #17172a, #16273e);
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Main container styling */
+  .container {
+    width: 90%;
+    /* border: 2px solid white; */
+    max-width: 500px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(2, 2, 2, 0.3);
+    text-align: center;
+  }
+  
+  /* Title styling */
+  .quizApp h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f0f0f0;
+    margin-bottom: 20px;
+  }
+  
+  /* Wrapper styling for layout control */
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+  }
+  
+  /* Start section input and button styling */
+  .Start input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .Start input::placeholder {
+    color: #666;
+  }
+  
+  .Start button {
+    padding: 12px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .Start button:hover {
+    background-color: #45a049;
+  }
+  
+  /* High score link styling */
+  .HighScore a {
+    text-decoration: none;
+    color: #f9a826;     
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  
+  .HighScore a:hover {
+    color: #ffd700;
+  }
+  

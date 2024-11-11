@@ -1,0 +1,109 @@
+/* Quiz Component Container */
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 55vh;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: #fff;
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+  }
+  
+  /* Main Container for Question and Answer */
+  .container {
+    width: 90%;
+    max-width: 900px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Question Styling */
+  .Question {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Answer Container - Grid Layout for Answer Options */
+  .answer_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  /* Styling for Each Answer Option */
+  .answer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Hover Effect for Answer Options */
+  .answer:hover {
+    /* background-color: rgba(255, 255, 255, 0.3); */
+    transform: scale(1.05);
+  }
+  
+  /* Correct Answer Styling */
+  .correctAns {
+    background-color: #4caf50; /* Green for Correct Answer */
+    color: #fff;
+  }
+  
+  /* Incorrect Answer Styling */
+  .incorrectAns {
+    background-color: #f44336; /* Red for Incorrect Answer */
+    color: #fff;
+  }
+  
+  /* Responsive Adjustments for Smaller Screens */
+  @media (max-width: 600px) {
+    .Question {
+      font-size: 1.2rem;
+    }
+  
+    .answer {
+      font-size: 0.9rem;
+      padding: 12px;
+    }
+  }
+  /* Style for the answer index */
+.answerIndex {
+    font-size: 1.5rem;  /* Larger size for visibility */
+    font-weight: bold;  /* Make the index number bold */
+    color: #fff;  /* White color for the index number */
+    background-color: #ff5c8d;  /* Light pink background for emphasis */
+    border-radius: 50%;  /* Circular background for the index */
+    width: 30px;  /* Set fixed width */
+    height: 30px;  /* Set fixed height */
+    display: flex;  /* Flex to center the content */
+    align-items: center;  /* Vertically center */
+    justify-content: center;  /* Horizontally center */
+    margin-right: 15px;  /* Space between the number and the answer text */
+    transition: background-color 0.3s ease, transform 0.3s ease;  /* Smooth transition for hover effect */
+  }
+  
+  /* Hover effect for the index number */
+  .answerIndex:hover {
+    background-color: #ff3e6c;  /* Darker shade on hover */
+    transform: scale(1.1);  /* Slightly enlarge on hover */
+  }
+  

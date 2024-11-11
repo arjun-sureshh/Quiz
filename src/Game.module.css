@@ -1,0 +1,41 @@
+/* Game Component Container */
+.gameContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Main Wrapper for Game Content */
+  .gameWrapper {
+    width: 90%;
+    max-width: 900px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  /* Layout Wrapper for Both HeadDisplay and Quiz */
+  .gameContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  /* Responsive Design for Smaller Screens */
+  @media (max-width: 600px) {
+    .gameWrapper {
+      width: 100%;
+      padding: 15px;
+    }   
+  }
+  

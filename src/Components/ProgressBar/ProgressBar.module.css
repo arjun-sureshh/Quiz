@@ -1,0 +1,18 @@
+/* ProgressBar container styling */
+.ProgressBar {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    height: 20px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Loading bar styling with gradient and transition */
+  .loadingBar {
+    height: 100%;
+    background: linear-gradient(90deg, #4caf50, #76ff03);
+    transition: width 0.3s ease;
+    border-radius: 10px 0 0 10px;
+  }
+  
