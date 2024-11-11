@@ -53,33 +53,3 @@ Here's an overview of the key folders and files in this project:
 │   ├── index.js                  # Main entry file
 │   └── styles                    # Folder containing CSS Modules for each component
 └── README.md                     # Project README
-Installation and Setup
-To run this project locally, follow these steps:
- 1,Clone the repository:
-    git clone https://github.com/your-username/quiz-app.git
-2,Navigate to the project directory:
-    cd quiz-app
-3,Install dependencies:
-    npm install
-4,Start the development server:
-    npm start
-5,Access the app: Open http://localhost:3000 in your browser to view the quiz app.
-
-->Components Overview
- .Game Component
-    Renders the overall quiz layout, containing the HeadDisplay and Quiz components.
-
- .Quiz Component
-    Manages the display of questions and answers. Highlights selected and correct answers with color-coded feedback. It also updates the score when a correct answer is chosen.
-
- .HeadDisplay Component
-    Displays the score, current question count, and player name, providing context and feedback during the quiz.
-
- .FinalScore Component
-    Summarizes the quiz results, displaying the player's name and final score, and offers options to view high scores or restart the quiz.
-
- .HighScore Component
-    Displays a list of top scores. Each score includes the player's name and total points.
-
- .Progressbar Component
-    Shows a progress bar that represents the current question count in the quiz
